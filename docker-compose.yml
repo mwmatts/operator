@@ -1,0 +1,15 @@
+services:
+  operator:
+    build: .
+    image: operator:latest
+    restart: on-failure
+    env_file: .env
+    environment:
+      KIOS_DB_PATH: /data/kios.db
+    volumes:
+      - kios_data:/data
+    network_mode: host   # CortexShell runs on host:8100
+
+volumes:
+  kios_data:
+    external: true       # shared with KIOS containers
