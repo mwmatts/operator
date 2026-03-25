@@ -72,4 +72,4 @@ then times out with a message to the user.
 
 ## Telegram Bot
 
-@OperatorClaw_bot — create via @BotFather, add token to .env as OPERATOR_TELEGRAM_BOT_TOKEN
+@CortexOperatorBot — add token to .env as OPERATOR_TELEGRAM_BOT_TOKEN
